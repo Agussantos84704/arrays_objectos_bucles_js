@@ -24,26 +24,26 @@ if (ejercicio == 0) {
 // Ejercicios de sintaxis de "for"
 if (ejercicio == 1) {
     // Descomentar cada bloque y encontrar el error de sintaxis :D
-    /*for(i=0;<10i++){
+    for(let i=0;i<10;i++){
         console.log(`el valor de "i" es: ${i}`);
     }
-    */
-       /*forar i=0;<10;i++){
+    
+       for (let i=0;i<10;i++){
         console.log(`el valor de "i" es: ${i}`);
     }
-    */
-       /*for(var i=0;0<10;i++){
+    
+       for(let i=0;i<10;i++){
         console.log(`el valor de "i" es: ${i}`);
     }
-    */
-       /*for(var i=0;i>10;i++){
+    
+       for (let i=0;i>10;i++){
         console.log(`el valor de "i" es: ${i}`);
     }
-    */
-       /*for(var i=o;i<1o;i++){
-        consolelog(`el valor de "i" es: ${i}`);
+    
+       for (let i=0;i<10;i++){
+        console.log(`el valor de "i" es: ${i}`);
     }
-    */
+    
 
 }
 
@@ -53,7 +53,10 @@ if (ejercicio == 2) {
     // En cada iteración del bucle imprimir en consola el número
     // o índice que irá incrementando
     // Utilice bucle "for"
-}
+    for (let i=0;i<10;i++){
+        console.log(`${i}`)
+    }
+} 
 
 // Ejercicios de práctica numérica con bucle for of
 if (ejercicio == 3) {
@@ -62,7 +65,12 @@ if (ejercicio == 3) {
     // y en cada iteración imprira en la consola el valor
     // del número recorrido
     // Utilice bucle "for of"
-}
+
+    for (const value of numeros){
+        console.log(value);
+    }
+    
+} 
 
 // Ejercicios de práctica de objetos con bucle for of
 if (ejercicio == 4) {
@@ -84,12 +92,30 @@ if (ejercicio == 4) {
     // personas.
     // En cada iteración imprimir el nombre de la persona.
     // Utilice bucle "for of"
+    for (const id of personas){
+        console.log(`El nombre completo figura como ${id.nombre}, ${id.apellido}`)
+    }
 
 }
 
 // Ejercicios de práctica de objetos con bucle for of
 if (ejercicio == 5) {
     const personas = [];
+
+    let name1 = prompt (`Por favor, ingrese el primer nombre que desee`);
+    personas.push(name1);
+    let lastname1 = prompt (`Por favor, ingrese el primer apellido que desee`);
+    personas.push(lastname1);
+    let name2 = prompt (`Muy bien, ingrese por favor un segundo nombre`);
+    personas.push(name2);
+    let lastname2 = prompt (`Por ultimo, un segundo apellido`);
+    personas.push(lastname2);
+
+    console.log(personas)
+
+
+
+
     // Esta vez el array de personas comenzará vacio.
     // Realice un bucle que en cada iteración solicite
     // al usuario con prompt un nombre y apellido.
